@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-    shortdescription="Wheelchair Preset for Vespucci and JOSM"
-    description="Wheelchair preset for Vespucci and JOSM, based on the original JOSM version">
+    shortdescription="Military Preset for Vespucci and JOSM"
+    description="Military preset for Vespucci and JOSM, based on the original JOSM version">
 <!--
-
     Format description: https://josm.openstreetmap.de/wiki/TaggingPresets
 -->
-
+   <chunk id="aerodrome">
+        <key key="aeroway" value="aerodrome" match="keyvalue" />
+        <text key="name" text="Name" />
+        <optional>
+            <text key="iata" text="IATA" />
+            <text key="icao" text="ICAO" />
+           <text key="wikipedia" text="Wikipedia" />
+        </optional>
+    </chunk>
     <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
         <item name="Airfield" icon="styles/standard/transport/airport/airfield.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield"
