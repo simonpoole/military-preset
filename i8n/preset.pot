@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-23 23:01+0100\n"
+"POT-Creation-Date: 2016-03-01 16:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,43 +9,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: master_preset.xml:38(text:text|group:Military|preset:Bunker)
+#: master_preset.xml:12(text:text|key:iata)
+msgid "IATA"
+msgstr ""
+
+#: master_preset.xml:45(text:text|group:Military|preset:Bunker|key:name) master_preset.xml:10(text:text|key:name)
 msgid "Name"
 msgstr ""
 
-#: master_preset.xml:42(item:name|group:Military|preset:Range)
+#: master_preset.xml:49(item:name|group:Military|preset:Range)
 msgid "Range"
 msgstr ""
 
-#: master_preset.xml:27(item:name|group:Military|preset:Bunker)
+#: master_preset.xml:34(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
 msgstr ""
 
-#: master_preset.xml:36(combo:text|group:Military|preset:Bunker)
+#: master_preset.xml:43(combo:text|group:Military|preset:Bunker|key:bunker_type)
 msgid "Type"
 msgstr ""
 
-#: master_preset.xml:39(check:text|group:Military|preset:Bunker)
+#: master_preset.xml:13(text:text|key:icao)
+msgid "ICAO"
+msgstr ""
+
+#: master_preset.xml:46(check:text|group:Military|preset:Bunker|key:historic)
 msgid "Historic"
 msgstr ""
 
-#: master_preset.xml:11(item:name|group:Military|preset:Airfield)
+#: master_preset.xml:18(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
 msgstr ""
 
-#: master_preset.xml:37(combo:text|group:Military|preset:Bunker)
+#: master_preset.xml:44(combo:text|group:Military|preset:Bunker|key:location)
 msgid "Location"
 msgstr ""
 
-#: master_preset.xml:40(check:text|group:Military|preset:Bunker)
+#: master_preset.xml:47(check:text|group:Military|preset:Bunker|key:ruins)
 msgid "Ruins"
 msgstr ""
 
-#: master_preset.xml:20(item:name|group:Military|preset:Barracks)
+#: master_preset.xml:27(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
 msgstr ""
 
-#: master_preset.xml:10(group:name|group:Military)
+#: master_preset.xml:14(text:text|key:wikipedia)
+msgid "Wikipedia"
+msgstr ""
+
+#: master_preset.xml:17(group:name|group:Military)
 msgctxt "preset group"
 msgid "Military"
 msgstr ""

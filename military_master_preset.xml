@@ -5,7 +5,7 @@
 <!--
     Format description: https://josm.openstreetmap.de/wiki/TaggingPresets
 -->
-   <chunk id="aerodrome">
+   <chunk id="mil_aerodrome">
         <key key="aeroway" value="aerodrome" match="keyvalue" />
         <text key="name" text="Name" />
         <optional>
@@ -22,7 +22,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:military=airfield" />
             <space />
             <key key="military" value="airfield" match="keyvalue!" />
-            <reference ref="aerodrome" />
+            <reference ref="mil_aerodrome" />
         </item>
         <item name="Barracks" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=barracks"
