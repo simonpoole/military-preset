@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Military Preset for Vespucci and JOSM" description="Military preset for Vespucci and JOSM, based on the original JOSM version">
+<!--
+    Format description: https://josm.openstreetmap.de/wiki/TaggingPresets
+-->
+   <chunk id="mil_aerodrome">
+        <key key="aeroway" value="aerodrome" match="keyvalue"/>
+        <text key="name" text="Name"/>
+        <optional>
+            <text key="iata" text="IATA"/>
+            <text key="icao" text="ICAO"/>
+           <text key="wikipedia" text="Wikipedia"/>
+        </optional>
+    </chunk>
+    <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
+        <item name="Airfield" icon="ICONPATH:military_airport.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=airfield" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=airfield" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:military=airfield"/>
+            <space/>
+            <key key="military" value="airfield" match="keyvalue!"/>
+            <reference ref="mil_aerodrome"/>
+        </item>
+        <item name="Barracks" icon="ICONPATH:military_barracks_23002.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=barracks" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=barracks" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=barracks"/>
+            <space/>
+            <key key="military" value="barracks"/>
+        </item>
+        <item name="Bunker" icon="ICONPATH:military_bunker_23003.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=bunker" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=bunker" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=bunker" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:military=bunker" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:military=bunker" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=bunker"/>
+            <space/>
+            <key key="military" value="bunker"/>
+            <combo key="bunker_type" text="Type" values="pillbox,munitions,hardened_aircraft_shelter" match="key"/>
+            <combo key="location" text="Location" values="underground,overground" values_context="bunker"/>
+            <text key="name" text="Name"/>
+            <check key="historic" text="Historic"/>
+            <check key="ruins" text="Ruins"/>
+        </item>
+        <item name="Range" icon="ICONPATH:military_range_23007.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=range" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=range" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=range"/>
+            <space/>
+            <key key="military" value="range"/>
+        </item>
+    </group> <!-- Military -->
+</presets>

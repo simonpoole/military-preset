@@ -14,8 +14,8 @@
            <text key="wikipedia" text="Wikipedia" />
         </optional>
     </chunk>
-    <group name="Military" name_context="preset group" icon="military_military.png">
-        <item name="Airfield" icon="military_airport.png" type="node,closedway" preset_name_label="true">
+    <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
+        <item name="Airfield" icon="ICONPATH:military_airport.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=airfield"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=airfield"
@@ -24,14 +24,14 @@
             <key key="military" value="airfield" match="keyvalue!" />
             <reference ref="mil_aerodrome" />
         </item>
-        <item name="Barracks" icon="military_barracks_23002.png" type="node,closedway" preset_name_label="true">
+        <item name="Barracks" icon="ICONPATH:military_barracks_23002.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=barracks"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=barracks"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=barracks" />
             <space />
             <key key="military" value="barracks" />
         </item>
-        <item name="Bunker" icon="military_bunker_23003.png" type="node,closedway" preset_name_label="true">
+        <item name="Bunker" icon="ICONPATH:military_bunker_23003.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=bunker"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=bunker"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=bunker"
@@ -46,7 +46,7 @@
             <check key="historic" text="Historic" />
             <check key="ruins" text="Ruins" />
         </item>
-        <item name="Range" icon="military_range_23007.png" type="node,closedway" preset_name_label="true">
+        <item name="Range" icon="ICONPATH:military_range_23007.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=range"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=range"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=range" />

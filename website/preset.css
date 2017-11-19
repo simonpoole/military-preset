@@ -14,8 +14,18 @@ h1{
 	font: 32px arial, sans-serif;
 }
 
+h2{
+	font: 24px arial, sans-serif;
+	padding-top: 20px;
+}
+
 h3{
-	font: 20px arial, sans-serif;
+	font: 18px arial, sans-serif;
+	padding-top: 20px;
+}
+
+h4{
+	font: 16px arial, sans-serif;
 	padding-top: 20px;
 }
 

@@ -1,0 +1,61 @@
+# 
+# Translators:
+# Mika Laari <laari@iki.fi>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Presets\n"
+"POT-Creation-Date: 2016-01-23 23:01+0100\n"
+"PO-Revision-Date: 2017-11-19 11:19+0000\n"
+"Last-Translator: Mika Laari <laari@iki.fi>\n"
+"Language-Team: Finnish (http://www.transifex.com/openstreetmap/presets/language/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: master_preset.xml:38(text:text|group:Military|preset:Bunker)
+msgid "Name"
+msgstr "Nimi"
+
+#: master_preset.xml:42(item:name|group:Military|preset:Range)
+msgid "Range"
+msgstr "Ampuma-alue"
+
+#: master_preset.xml:27(item:name|group:Military|preset:Bunker)
+msgid "Bunker"
+msgstr "Bunkkeri"
+
+#: master_preset.xml:36(combo:text|group:Military|preset:Bunker)
+msgid "Type"
+msgstr "Tyyppi"
+
+#: master_preset.xml:39(check:text|group:Military|preset:Bunker)
+msgid "Historic"
+msgstr "Historiallinen"
+
+#: master_preset.xml:11(item:name|group:Military|preset:Airfield)
+msgid "Airfield"
+msgstr "Lentokenttä"
+
+#: master_preset.xml:37(combo:text|group:Military|preset:Bunker)
+msgid "Location"
+msgstr "Sijainti"
+
+#: master_preset.xml:40(check:text|group:Military|preset:Bunker)
+msgid "Ruins"
+msgstr "Rauniot"
+
+#: master_preset.xml:20(item:name|group:Military|preset:Barracks)
+msgid "Barracks"
+msgstr "Kasarmi"
+
+#: master_preset.xml:10(group:name|group:Military)
+msgctxt "preset group"
+msgid "Military"
+msgstr "Sotilaallinen"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: master_preset.xml0(None)
+msgid "translator-credits"
+msgstr "Mika Laari <laari@iki.fi>, 2017, 2017"

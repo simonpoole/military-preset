@@ -1,0 +1,61 @@
+# 
+# Translators:
+# Jurbo Lator <joern.map@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Presets\n"
+"POT-Creation-Date: 2016-01-23 23:01+0100\n"
+"PO-Revision-Date: 2017-09-22 19:52+0000\n"
+"Last-Translator: Jurbo Lator <joern.map@gmail.com>\n"
+"Language-Team: Danish (http://www.transifex.com/openstreetmap/presets/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: master_preset.xml:38(text:text|group:Military|preset:Bunker)
+msgid "Name"
+msgstr "Navn"
+
+#: master_preset.xml:42(item:name|group:Military|preset:Range)
+msgid "Range"
+msgstr ""
+
+#: master_preset.xml:27(item:name|group:Military|preset:Bunker)
+msgid "Bunker"
+msgstr "Bunker"
+
+#: master_preset.xml:36(combo:text|group:Military|preset:Bunker)
+msgid "Type"
+msgstr "Type"
+
+#: master_preset.xml:39(check:text|group:Military|preset:Bunker)
+msgid "Historic"
+msgstr "Historisk"
+
+#: master_preset.xml:11(item:name|group:Military|preset:Airfield)
+msgid "Airfield"
+msgstr "Flyveplads"
+
+#: master_preset.xml:37(combo:text|group:Military|preset:Bunker)
+msgid "Location"
+msgstr "Location"
+
+#: master_preset.xml:40(check:text|group:Military|preset:Bunker)
+msgid "Ruins"
+msgstr "Ruiner"
+
+#: master_preset.xml:20(item:name|group:Military|preset:Barracks)
+msgid "Barracks"
+msgstr "Barakker"
+
+#: master_preset.xml:10(group:name|group:Military)
+msgctxt "preset group"
+msgid "Military"
+msgstr "Militær"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: master_preset.xml0(None)
+msgid "translator-credits"
+msgstr ""
