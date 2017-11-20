@@ -1,13 +1,13 @@
 # 
 # Translators:
 # hakuchi <heimlikloh@mail.com>, 2017
-# Simon Poole <sp8962@gmail.com>, 2016
+# Simon Poole <sp8962@gmail.com>, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2016-01-23 23:01+0100\n"
-"PO-Revision-Date: 2017-11-19 11:17+0000\n"
-"Last-Translator: hakuchi <heimlikloh@mail.com>\n"
+"POT-Creation-Date: 2017-11-20 01:17+0100\n"
+"PO-Revision-Date: 2017-11-20 00:27+0000\n"
+"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,46 +15,107 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: master_preset.xml:38(text:text|group:Military|preset:Bunker)
-msgid "Name"
-msgstr "Name"
-
-#: master_preset.xml:42(item:name|group:Military|preset:Range)
-msgid "Range"
-msgstr "Schiessplatz"
-
-#: master_preset.xml:27(item:name|group:Military|preset:Bunker)
-msgid "Bunker"
-msgstr "Bunker"
-
-#: master_preset.xml:36(combo:text|group:Military|preset:Bunker)
-msgid "Type"
-msgstr "Typ"
-
-#: master_preset.xml:39(check:text|group:Military|preset:Bunker)
-msgid "Historic"
-msgstr "Historisch"
-
-#: master_preset.xml:11(item:name|group:Military|preset:Airfield)
+#: master_preset.xml:24(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
 msgstr "Flugplatz"
 
-#: master_preset.xml:37(combo:text|group:Military|preset:Bunker)
-msgid "Location"
-msgstr "Lage"
-
-#: master_preset.xml:40(check:text|group:Military|preset:Bunker)
-msgid "Ruins"
-msgstr "Ruinen"
-
-#: master_preset.xml:20(item:name|group:Military|preset:Barracks)
+#: master_preset.xml:33(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
 msgstr "Kaserne"
 
-#: master_preset.xml:10(group:name|group:Military)
+#: master_preset.xml:41(item:name|group:Military|preset:Bunker)
+msgid "Bunker"
+msgstr "Bunker"
+
+#: master_preset.xml:56(item:name|group:Military|preset:Checkpoint)
+msgid "Checkpoint"
+msgstr "Kontrollpunkt"
+
+#: master_preset.xml:65(item:name|group:Military|preset:Danger_area)
+msgid "Danger area"
+msgstr "Gefahrenbereich"
+
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Hardened aircraft shelter"
+msgstr "Flugzeugschutzbau"
+
+#: master_preset.xml:110(check:text|group:Military|preset:Trench|key:historic)
+#: master_preset.xml:53(check:text|group:Military|preset:Bunker|key:historic)
+msgid "Historic"
+msgstr "Historisch"
+
+#: master_preset.xml:12(text:text|key:iata)
+msgid "IATA"
+msgstr "IATA"
+
+#: master_preset.xml:13(text:text|key:icao)
+msgid "ICAO"
+msgstr "ICAO"
+
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Munitions"
+msgstr "Munition"
+
+#: master_preset.xml:10(text:text|key:name)
+#: master_preset.xml:19(text:text|key:name)
+msgid "Name"
+msgstr "Name"
+
+#: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
+msgid "Naval base"
+msgstr "Marinestützpunkt"
+
+#: master_preset.xml:87(item:name|group:Military|preset:Office)
+msgid "Office"
+msgstr "Büro"
+
+#: master_preset.xml:20(text:text|key:operator)
+msgid "Operator"
+msgstr "Betreiber"
+
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Pillbox"
+msgstr "Maschinengewehrnest"
+
+#: master_preset.xml:95(item:name|group:Military|preset:Range)
+msgid "Range"
+msgstr "Schiessplatz"
+
+#: master_preset.xml:54(check:text|group:Military|preset:Bunker|key:ruins)
+msgid "Ruins"
+msgstr "Ruinen"
+
+#: master_preset.xml:103(item:name|group:Military|preset:Trench)
+msgid "Trench"
+msgstr "Schützengraben"
+
+#: master_preset.xml:50(combo:text|group:Military|preset:Bunker|key:bunker_type)
+msgid "Type"
+msgstr "Typ"
+
+#: master_preset.xml:14(text:text|key:wikipedia)
+msgid "Wikipedia"
+msgstr "Wikipedia"
+
+#: master_preset.xml:23(group:name|group:Military)
 msgctxt "preset group"
 msgid "Military"
 msgstr "Militär"
+
+#: master_preset.xml:51(combo:text|group:Military|preset:Bunker|key:location)
+msgctxt "bunker"
+msgid "Location"
+msgstr "Lage"
+
+#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+msgctxt "bunker"
+msgid "Overground"
+msgstr "Oberirdisch"
+
+#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+msgctxt "bunker"
+msgid "Underground"
+msgstr "Unterirdisch"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: master_preset.xml0(None)
