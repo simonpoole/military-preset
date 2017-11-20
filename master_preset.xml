@@ -20,8 +20,8 @@
     		<text key="operator" text="Operator" />
     	</optional>
     </chunk>
-    <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
-        <item name="Airfield" icon="ICONPATH:military_airport.ICONTYPE" type="node,closedway,,multipolygon" preset_name_label="true">
+    <group name="Military" name_context="preset group" icon="${ICONPATH}military_military.${ICONTYPE}">
+        <item name="Airfield" icon="${ICONPATH}military_airport.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=airfield"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=airfield"
@@ -30,7 +30,7 @@
             <key key="military" value="airfield" match="keyvalue!" />
             <reference ref="mil_aerodrome" />
         </item>
-        <item name="Barracks" icon="ICONPATH:military_barracks_23002.ICONTYPE" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Barracks" icon="${ICONPATH}military_barracks_23002.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=barracks"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=barracks"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=barracks" />
@@ -38,7 +38,7 @@
             <key key="military" value="barracks" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Bunker" icon="ICONPATH:military_bunker_23003.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Bunker" icon="${ICONPATH}military_bunker_23003.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=bunker"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=bunker"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=bunker"
@@ -53,7 +53,7 @@
             <check key="historic" text="Historic" />
             <check key="ruins" text="Ruins" />
         </item>
-        <item name="Checkpoint" icon="ICONPATH:military_checkpoint_23004.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Checkpoint" icon="${ICONPATH}military_checkpoint_23004.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=bunker"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=bunker"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:military=bunker"
@@ -62,7 +62,7 @@
             <key key="military" value="checkpoint" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Danger area" icon="ICONPATH:military_danger_area_23005.ICONTYPE" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Danger area" icon="${ICONPATH}military_danger_area_23005.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=danger_area"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=danger_area"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=danger_area"
@@ -73,7 +73,7 @@
             <key key="military" value="danger_area" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Naval base" icon="ICONPATH:military_naval_base_23006.ICONTYPE" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Naval base" icon="${ICONPATH}military_naval_base_23006.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=naval_base"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=naval_base"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=naval_base"
@@ -84,7 +84,7 @@
             <key key="military" value="naval_base" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Office" icon="ICONPATH:military_office.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Office" icon="${ICONPATH}military_office.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=office"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=office"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:military=office" />
@@ -92,7 +92,7 @@
             <key key="military" value="office" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Range" icon="ICONPATH:military_range_23007.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Range" icon="${ICONPATH}military_range_23007.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=range"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=range"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=range" />
@@ -100,7 +100,7 @@
             <key key="military" value="range" />
             <reference ref="optional_name_operator" />
         </item>
-        <item name="Trench" icon="ICONPATH:military_trench_23008.ICONTYPE" type="node,way" preset_name_label="true">
+        <item name="Trench" icon="${ICONPATH}military_trench_23008.${ICONTYPE}" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=trench"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=trench"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:military=trench"
