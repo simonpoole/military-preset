@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-11-19 23:46+0100\n"
+"POT-Creation-Date: 2017-11-20 01:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,19 +9,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: master_preset.xml:18(item:name|group:Military|preset:Airfield)
+#: master_preset.xml:24(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
 msgstr ""
 
-#: master_preset.xml:27(item:name|group:Military|preset:Barracks)
+#: master_preset.xml:33(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
 msgstr ""
 
-#: master_preset.xml:34(item:name|group:Military|preset:Bunker)
+#: master_preset.xml:41(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
 msgstr ""
 
-#: master_preset.xml:46(check:text|group:Military|preset:Bunker|key:historic)
+#: master_preset.xml:56(item:name|group:Military|preset:Checkpoint)
+msgid "Checkpoint"
+msgstr ""
+
+#: master_preset.xml:65(item:name|group:Military|preset:Danger_area)
+msgid "Danger area"
+msgstr ""
+
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Hardened aircraft shelter"
+msgstr ""
+
+#: master_preset.xml:110(check:text|group:Military|preset:Trench|key:historic) master_preset.xml:53(check:text|group:Military|preset:Bunker|key:historic)
 msgid "Historic"
 msgstr ""
 
@@ -33,19 +45,43 @@ msgstr ""
 msgid "ICAO"
 msgstr ""
 
-#: master_preset.xml:10(text:text|key:name) master_preset.xml:45(text:text|group:Military|preset:Bunker|key:name)
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Munitions"
+msgstr ""
+
+#: master_preset.xml:10(text:text|key:name) master_preset.xml:19(text:text|key:name)
 msgid "Name"
 msgstr ""
 
-#: master_preset.xml:49(item:name|group:Military|preset:Range)
+#: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
+msgid "Naval base"
+msgstr ""
+
+#: master_preset.xml:87(item:name|group:Military|preset:Office)
+msgid "Office"
+msgstr ""
+
+#: master_preset.xml:20(text:text|key:operator)
+msgid "Operator"
+msgstr ""
+
+#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+msgid "Pillbox"
+msgstr ""
+
+#: master_preset.xml:95(item:name|group:Military|preset:Range)
 msgid "Range"
 msgstr ""
 
-#: master_preset.xml:47(check:text|group:Military|preset:Bunker|key:ruins)
+#: master_preset.xml:54(check:text|group:Military|preset:Bunker|key:ruins)
 msgid "Ruins"
 msgstr ""
 
-#: master_preset.xml:43(combo:text|group:Military|preset:Bunker|key:bunker_type)
+#: master_preset.xml:103(item:name|group:Military|preset:Trench)
+msgid "Trench"
+msgstr ""
+
+#: master_preset.xml:50(combo:text|group:Military|preset:Bunker|key:bunker_type)
 msgid "Type"
 msgstr ""
 
@@ -53,14 +89,24 @@ msgstr ""
 msgid "Wikipedia"
 msgstr ""
 
-#: master_preset.xml:17(group:name|group:Military)
+#: master_preset.xml:23(group:name|group:Military)
 msgctxt "preset group"
 msgid "Military"
 msgstr ""
 
-#: master_preset.xml:44(combo:text|group:Military|preset:Bunker|key:location)
+#: master_preset.xml:51(combo:text|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Location"
+msgstr ""
+
+#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+msgctxt "bunker"
+msgid "Overground"
+msgstr ""
+
+#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+msgctxt "bunker"
+msgid "Underground"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
