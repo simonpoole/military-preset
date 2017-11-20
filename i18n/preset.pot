@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-11-20 08:31+0100\n"
+"POT-Creation-Date: 2017-11-20 09:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,12 +49,16 @@ msgstr ""
 msgid "Munitions"
 msgstr ""
 
-#: master_preset.xml:10(text:text|key:name) master_preset.xml:19(text:text|key:name)
+#: master_preset.xml:10(text:text|key:name) master_preset.xml:121(text:text|group:Military|preset:Nuclear_explosion_site|key:name) master_preset.xml:19(text:text|key:name)
 msgid "Name"
 msgstr ""
 
 #: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
 msgid "Naval base"
+msgstr ""
+
+#: master_preset.xml:114(item:name|group:Military|preset:Nuclear_explosion_site)
+msgid "Nuclear explosion site"
 msgstr ""
 
 #: master_preset.xml:87(item:name|group:Military|preset:Office)

@@ -110,5 +110,16 @@
             <check key="historic" text="Historic" />
             <reference ref="optional_name_operator" />
         </item>
+        <separator/>
+        <item name="Nuclear explosion site" icon="${ICONPATH}military_nuclear_explosion_site.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=nuclear_explosion_site"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=nuclear_explosion_site"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=nuclear_explosion_site" />
+            <space />
+            <key key="military" value="nuclear_explosion_site" />
+            <optional>
+    			<text key="name" text="Name" />
+    		</optional>
+        </item>
     </group> <!-- Military -->
 </presets>
