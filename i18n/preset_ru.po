@@ -1,52 +1,52 @@
 # 
 # Translators:
-# Alexandre de Menezes <afmenez@gmail.com>, 2018
-# Eduardo Addad de Oliveira <eduardoaddad@hotmail.com>, 2018
+# 4004 <transifex.4004@mailhero.io>, 2018
+# Yury Lebedev, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2017-11-20 01:17+0100\n"
-"PO-Revision-Date: 2019-06-17 16:34+0000\n"
-"Last-Translator: Eduardo Addad de Oliveira <eduardoaddad@hotmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/openstreetmap/presets/language/pt_BR/)\n"
+"PO-Revision-Date: 2019-05-23 09:46+0000\n"
+"Last-Translator: Serzhanya <esstofree@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/openstreetmap/presets/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: master_preset.xml:24(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
-msgstr "Aeródromo"
+msgstr "Аэродром"
 
 #: master_preset.xml:33(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
-msgstr "Caserna"
+msgstr "Казармы"
 
 #: master_preset.xml:41(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
-msgstr "Casamata"
+msgstr "Бункер"
 
 #: master_preset.xml:56(item:name|group:Military|preset:Checkpoint)
 msgid "Checkpoint"
-msgstr "Posto de Controle"
+msgstr "Контрольно-пропускной пункт"
 
 #: master_preset.xml:65(item:name|group:Military|preset:Danger_area)
 msgid "Danger area"
-msgstr "Área perigosa"
+msgstr "Опасная зона"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Hardened aircraft shelter"
-msgstr "Abrigo de aeronaves endurecido"
+msgstr "Защищённый самолётный ангар"
 
 #: master_preset.xml:110(check:text|group:Military|preset:Trench|key:historic)
 #: master_preset.xml:53(check:text|group:Military|preset:Bunker|key:historic)
 msgid "Historic"
-msgstr "Histórico"
+msgstr "Историческое"
 
 #: master_preset.xml:12(text:text|key:iata)
 msgid "IATA"
-msgstr "Código IATA"
+msgstr "IATA"
 
 #: master_preset.xml:13(text:text|key:icao)
 msgid "ICAO"
@@ -54,70 +54,70 @@ msgstr "ICAO"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Munitions"
-msgstr "Paiol"
+msgstr "Снаряжение"
 
 #: master_preset.xml:10(text:text|key:name)
 #: master_preset.xml:19(text:text|key:name)
 msgid "Name"
-msgstr "Nome"
+msgstr "Название"
 
 #: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
 msgid "Naval base"
-msgstr "Base naval"
+msgstr "Военно-морская база"
 
 #: master_preset.xml:87(item:name|group:Military|preset:Office)
 msgid "Office"
-msgstr "Escritório"
+msgstr "Офисы"
 
 #: master_preset.xml:20(text:text|key:operator)
 msgid "Operator"
-msgstr "Operador"
+msgstr "Оператор"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Pillbox"
-msgstr "Casamata"
+msgstr "ДОТ"
 
 #: master_preset.xml:95(item:name|group:Military|preset:Range)
 msgid "Range"
-msgstr "Alcance"
+msgstr "Полигон"
 
 #: master_preset.xml:54(check:text|group:Military|preset:Bunker|key:ruins)
 msgid "Ruins"
-msgstr "Ruínas"
+msgstr "Развалины"
 
 #: master_preset.xml:103(item:name|group:Military|preset:Trench)
 msgid "Trench"
-msgstr "Vala"
+msgstr "Ров"
 
 #: master_preset.xml:50(combo:text|group:Military|preset:Bunker|key:bunker_type)
 msgid "Type"
-msgstr "Tipo"
+msgstr "Тип"
 
 #: master_preset.xml:14(text:text|key:wikipedia)
 msgid "Wikipedia"
-msgstr "Artigo na Wikipédia"
+msgstr "Википедия"
 
 #: master_preset.xml:23(group:name|group:Military)
 msgctxt "preset group"
 msgid "Military"
-msgstr "Militar"
+msgstr "Военное"
 
 #: master_preset.xml:51(combo:text|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Location"
-msgstr "Localização"
+msgstr "Расположение"
 
 #: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Overground"
-msgstr "Aéreo"
+msgstr "Надземный"
 
 #: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Underground"
-msgstr "Subterrâneo"
+msgstr "Подземный"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: master_preset.xml0(None)
 msgid "translator-credits"
-msgstr "Adrianojbr <adrianojbr@gmail.com>\nAlexandre F. de Menezes <afmenez at terra.com.br>\nAlexandre Magno <alexandre.mbm@gmail.com>, 2015\nAlexandre F. de Menezes\nAlexandre R Soares\nalipius <alipiusneto@gmail.com>\nalno <alno@alnoprods.net>\nBlademir <blademirtc@hotmail.com>\nBráulio Bezerra <brauliobezerra@gmail.com>\nBruno Depizzol <bdepizzol@netscape.net>\nbrunomelniic\nCristianoB <buneker@habmalnefrage.de>\nDalton Scavassa\nDaniel Assuncao <daniel1977.br@gmail.com>\nDebianTUX <felipe.gomes.ferreira@gmail.com>\nDirk Stöcker <launchpad@dstoecker.de>\nDjavan Fagundes\nDon-vip <vincent.privat@gmail.com>\nDuke <duke.m16@gmail.com>\nerickdeoliveiraleal\nfabriciosouza <fsbricio@gmail.com>\nFelipe Costa < fsc7@yahoo.com>\nFelipe L. <felipe.idj@hotmail.com>\nFernando Trebien\ngdonadel\njgpacker <john.packer7@gmail.com>\nJúlio Cezar Santos Pires\nJulison <julisonbr@gmail.com>\nLinhares <linharesxt@gmail.com>\nLucas Pereira <lucaspefreitas@gmail.com>\nLuciano Billotta\nLuis Bahiana <luis.bahiana@gmail.com>\nMarcio Aguiar <aguiar.marcio@gmail.com>\nMaurorjb <maurorjb@gmail.com>\nNelson A. de Oliveira <naoliv@gmail.com>\nNighto\nNorgeon\nPedroMarins\nPíndaro GBarbosa\nRafael César M. Alves <rafaces@gmail.com>\nRodrigo de Avila\nrsevero <rodrigo@fabricadeideias.com>\nSkippern <sk|ppern@jabber.org>\nTarcisio Oliveira <tarcisio@ymail.com>\nThiago Vieira <thipvieira@gmail.com>\ntudoblu\nWille <wille@riseup.net>\nVitor George <vitor.george@gmail.com>\nVítor Rodrigo Dias <vitor.dias@gmail.com>\nze bernardes <bernardescaires@yahoo.com.br>"
+msgstr ""

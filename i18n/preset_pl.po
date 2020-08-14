@@ -1,12 +1,14 @@
 # 
 # Translators:
 # Teiron, 2016
+# Piotr Sokół <psokol.l10n@gmail.com>, 2018
+# Right Path, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2017-11-20 01:17+0100\n"
-"PO-Revision-Date: 2017-11-20 00:24+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"PO-Revision-Date: 2019-07-04 21:08+0000\n"
+"Last-Translator: maro21 OSM\n"
 "Language-Team: Polish (http://www.transifex.com/openstreetmap/presets/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,11 +34,11 @@ msgstr "Wojskowy punkt kontrolny"
 
 #: master_preset.xml:65(item:name|group:Military|preset:Danger_area)
 msgid "Danger area"
-msgstr ""
+msgstr "Strefa zagrożenia"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Hardened aircraft shelter"
-msgstr ""
+msgstr "Wzmocniony hangar lotniczy"
 
 #: master_preset.xml:110(check:text|group:Military|preset:Trench|key:historic)
 #: master_preset.xml:53(check:text|group:Military|preset:Bunker|key:historic)
@@ -53,7 +55,7 @@ msgstr "ICAO"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Munitions"
-msgstr ""
+msgstr "Amunicja"
 
 #: master_preset.xml:10(text:text|key:name)
 #: master_preset.xml:19(text:text|key:name)
@@ -62,11 +64,11 @@ msgstr "Nazwa"
 
 #: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
 msgid "Naval base"
-msgstr ""
+msgstr "Port wojenny"
 
 #: master_preset.xml:87(item:name|group:Military|preset:Office)
 msgid "Office"
-msgstr "Biura"
+msgstr "Biuro"
 
 #: master_preset.xml:20(text:text|key:operator)
 msgid "Operator"
@@ -74,7 +76,7 @@ msgstr "Operator"
 
 #: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Pillbox"
-msgstr ""
+msgstr "Schron ze stanowiskiem ogniowym"
 
 #: master_preset.xml:95(item:name|group:Military|preset:Range)
 msgid "Range"
@@ -86,7 +88,7 @@ msgstr "Ruiny"
 
 #: master_preset.xml:103(item:name|group:Military|preset:Trench)
 msgid "Trench"
-msgstr "Rów"
+msgstr "Okop"
 
 #: master_preset.xml:50(combo:text|group:Military|preset:Bunker|key:bunker_type)
 msgid "Type"
@@ -109,7 +111,7 @@ msgstr "Lokalizacja"
 #: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Overground"
-msgstr ""
+msgstr "Naziemny"
 
 #: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
@@ -119,4 +121,4 @@ msgstr "Podziemny"
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: master_preset.xml0(None)
 msgid "translator-credits"
-msgstr "Autorzy tłumaczenia"
+msgstr "Piotr Sokół <psokol.l18n@gmail.com>, 2018."

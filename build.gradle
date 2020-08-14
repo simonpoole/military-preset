@@ -12,11 +12,11 @@ ext {
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
+	vespucci_preset_version = '1.11'
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.0.7'
-	runtime 'commons-cli:commons-cli:1.4'
+	runtime 'ch.poole:preset-utils:0.21.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
@@ -28,10 +28,12 @@ task copyCss(type: Copy) {
 }
 
 task copyResources(type: Copy) {
-	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
+    from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "josm-preset-1.0.xlmns"
-    include "vespucci-preset-1.0.xlmns"
-	include "toJOSM.xslt"
+    include "vespucci-preset-${vespucci_preset_version}.xlmns"
+    include "toJOSM.xslt"
+    include "href2wiki.xslt"
+    include "wiki2href.xslt"
     into new File(buildDir.getPath() + '/xml')
 }
 
@@ -131,10 +133,10 @@ task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], t
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', "build/xml/vespucci-preset-${vespucci_preset_version}.xlmns", '-e', input
 	} else {
     	// validation
-    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'xmlstarlet', 'val', '-s', "build/xml/vespucci-preset-${vespucci_preset_version}.xlmns", '-e', input
 	}	
 }
 
