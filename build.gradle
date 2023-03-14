@@ -159,6 +159,7 @@ task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
 
 task josmZip(dependsOn: ["generateAndValidateJosm", "copyTranslations", "generateLang"], type: Zip) {
     baseName 'military-josm'
+    version ''
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
     from ('gen/' + josm_preset_file)
@@ -193,6 +194,7 @@ task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], t
 
 task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"], type: Zip) {
     baseName 'military'
+    version ''
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
     from ('gen/' + vespucci_preset_file)
@@ -203,6 +205,7 @@ vespucciZip.group = 'preset'
 vespucciZip.description = 'Generate zipped preset file for vespucci'
 
 githubRelease {
+    targetCommitish "gh-pages"
     token "${github_token}"
     owner "simonpoole"
     tagName "${version}"
@@ -223,7 +226,6 @@ _military_josm.zip_ - preset for JOSM using icons from this project and translat
 
 // generate everything
 build {
-	dependsOn "vespucciNoTranslationsZip"
 	dependsOn "vespucciZip" 
 	dependsOn "josmZip"
 	dependsOn "updatePot"
