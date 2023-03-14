@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-08-14 18:50+0200\n"
+"POT-Creation-Date: 2023-03-14 09:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Hardened aircraft shelter"
 msgstr ""
 
-#: master_preset.xml:43(check:text|group:Military|preset:Bunker|key:historic) master_preset.xml:82(check:text|group:Military|preset:Trench|key:historic)
+#: master_preset.xml:43(check:text|group:Military|preset:Bunker|key:historic) master_preset.xml:80(check:text|group:Military|preset:Trench|key:historic)
 msgid "Historic"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Munitions"
 msgstr ""
 
-#: master_preset.xml:10(text:text|key:name) master_preset.xml:19(text:text|key:name) master_preset.xml:91(text:text|group:Military|preset:Nuclear_explosion_site|key:name)
+#: master_preset.xml:10(text:text|key:name) master_preset.xml:19(text:text|key:name) master_preset.xml:89(text:text|group:Military|preset:Nuclear_explosion_site|key:name)
 msgid "Name"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Naval base"
 msgstr ""
 
-#: master_preset.xml:86(item:name|group:Military|preset:Nuclear_explosion_site)
+#: master_preset.xml:84(item:name|group:Military|preset:Nuclear_explosion_site)
 msgid "Nuclear explosion site"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Ruins"
 msgstr ""
 
-#: master_preset.xml:78(item:name|group:Military|preset:Trench)
+#: master_preset.xml:76(item:name|group:Military|preset:Trench)
 msgid "Trench"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgctxt "bunker"
 msgid "Underground"
 msgstr ""
 
-#: master_preset.xml:94(item:name|group:Military|preset:Military_landuse)
+#: master_preset.xml:92(item:name|group:Military|preset:Military_landuse)
 msgctxt "Landuse"
 msgid "Military landuse"
 msgstr ""

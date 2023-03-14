@@ -1,22 +1,44 @@
 /*
  */
  
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.github.breadmoirai:github-release:2.2.12"
+    }
+}
+
+plugins {
+    id "de.undercouch.download" version "4.1.2"
+}
+
 apply plugin: 'java'
+apply plugin: "com.github.breadmoirai.github-release"
 
 repositories {
-	jcenter()
-	maven { url 'https://dl.bintray.com/content/simonpoole/osm' }
+	mavenCentral()
+	mavenLocal()
 }
+
+version = '1.1.0'
+
+import de.undercouch.gradle.tasks.download.Download
 
 ext {
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
-	vespucci_preset_version = '1.11'
+	vespucci_preset_version = '1.15'
+	temp = 'build/temp/'
+	github_token = System.getenv('GITHUB_TOKEN')
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.21.0'
+	runtime 'ch.poole:preset-utils:0.31.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
@@ -42,8 +64,8 @@ task updateWebsite(dependsOn: ["copyCss"], type: JavaExec) {
     classpath = configurations.runtime
     args('-input',    preset_file,
     	 '-output',   'index.html',
-    	 '-vespucci', 'https://github.com/simonpoole/' + project.name + '/raw/gh-pages/gen/military.zip', 
-    	 '-josm',     'https://github.com/simonpoole/' + project.name + '/raw/gh-pages/gen/military-josm.zip')
+    	 '-vespucci', 'https://github.com/simonpoole/' + project.name + '/releases/latest/download/military.zip',
+         '-josm',     'https://github.com/simonpoole/' + project.name + '/releases/latest/download/military-josm.zip')
 }
 updateWebsite.group = 'preset utils'
 updateWebsite.description = 'Update the website'
@@ -66,6 +88,35 @@ task updateTranslations(type: Exec) {
 }
 updateTranslations.group = 'transifex'
 updateTranslations.description = 'Update translations by executing the transifex tx utility'
+
+task copyTranslations(dependsOn: ['updateTranslations'], type: Copy) {
+    from 'i18n'
+    into "$buildDir/temp/i18n/data"
+    rename 'preset_(.*).po', '$1.po'
+    rename { filename -> filename.replace '-r', '_' }
+    include "*.po"
+    include "*.pot"
+}
+
+task downloadLangScript(type: Download) {
+    acceptAnyCertificate true
+    src 'https://josm.openstreetmap.de/export/HEAD/osm/applications/editors/josm/i18n/i18n.pl'
+    dest temp + 'i18n.pl'
+}
+
+task patchLangScript(dependsOn: ['downloadLangScript']) {
+    doLast {
+        ant.replace(token:"/\\/", value:"/") {
+            fileset(dir: 'build/temp', includes: 'i18n.pl')
+        }
+    }
+}
+
+// generate JOSM .lang files
+task generateLang(dependsOn: ['patchLangScript'], type: Exec) {
+    workingDir temp + 'i18n/data'
+    commandLine 'perl', '../../i18n.pl', '--basedir=.', '--potfile=preset.pot', '*.po'
+}
 
 // tasks to generate a zipped preset for JOSM
 task josmIcons(type: Copy) {
@@ -106,7 +157,7 @@ task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
 	}	
 }
 
-task josmZip(dependsOn: ["generateAndValidateJosm"], type: Zip) {
+task josmZip(dependsOn: ["generateAndValidateJosm", "copyTranslations", "generateLang"], type: Zip) {
     baseName 'military-josm'
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
@@ -151,23 +202,31 @@ task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"
 vespucciZip.group = 'preset'
 vespucciZip.description = 'Generate zipped preset file for vespucci'
 
-task vespucciNoTranslationsZip(dependsOn: ["generateAndValidateVespucci"], type: Zip) {
-    baseName 'vespucci_zip_no_translations'
-    destinationDir = new File(projectDir, 'gen')
-    from ('icons/png')
-    from ('gen/' + vespucci_preset_file)
+githubRelease {
+    token "${github_token}"
+    owner "simonpoole"
+    tagName "${version}"
+    releaseName "${version}"
+    body '''\
+## Files
+    
+### Vespucci
+_military.zip_ - preset for Vespucci with icons 
+
+### JOSM
+_military_josm.zip_ - preset for JOSM using icons from this project and translations
+
+'''
+    releaseAssets new File(buildDir, 'gen').listFiles()
+    overwrite true
 }
-vespucciNoTranslationsZip.group = 'preset'
-vespucciNoTranslationsZip.description = 'Generate zipped preset file for vespucci without translations'
 
 // generate everything
-task generateAllPresetTypes {
+build {
 	dependsOn "vespucciNoTranslationsZip"
 	dependsOn "vespucciZip" 
 	dependsOn "josmZip"
 	dependsOn "updatePot"
 	dependsOn "updateWebsite"
 } 
-generateAllPresetTypes.group = 'preset'
-generateAllPresetTypes.description = 'Generate all preset types'
 
