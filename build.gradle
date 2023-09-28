@@ -37,20 +37,26 @@ ext {
 	github_token = System.getenv('GITHUB_TOKEN')
 }
 
+configurations {
+    resoveableRuntimeOnly.extendsFrom runtimeOnly {
+        canBeResolved = true
+    }
+}
+
 dependencies {
-	runtime 'ch.poole:preset-utils:0.31.0'
+    resoveableRuntimeOnly 'ch.poole:preset-utils:0.36.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
 
 task copyCss(type: Copy) {
-	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
+	from zipTree(project.configurations.resoveableRuntimeOnly.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "preset.css"
     into new File(projectDir.getPath() + '/website')
 }
 
 task copyResources(type: Copy) {
-    from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
+    from zipTree(project.configurations.resoveableRuntimeOnly.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "josm-preset-1.0.xlmns"
     include "vespucci-preset-${vespucci_preset_version}.xlmns"
     include "toJOSM.xslt"
@@ -61,7 +67,7 @@ task copyResources(type: Copy) {
 
 task updateWebsite(dependsOn: ["copyCss"], type: JavaExec) {
     main = "ch.poole.osm.presetutils.Preset2Html"
-    classpath = configurations.runtime
+    classpath = configurations.resoveableRuntimeOnly
     args('-input',    preset_file,
     	 '-output',   'index.html',
     	 '-vespucci', 'https://github.com/simonpoole/' + project.name + '/releases/latest/download/military.zip',
@@ -72,7 +78,7 @@ updateWebsite.description = 'Update the website'
 
 task updatePot(type: JavaExec) {
     main = "ch.poole.osm.presetutils.Preset2Pot"
-    classpath = configurations.runtime
+    classpath = configurations.resoveableRuntimeOnly
     args('-input',  preset_file,
     	 '-output', 'i18n/preset.pot')
 }
@@ -158,9 +164,9 @@ task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
 }
 
 task josmZip(dependsOn: ["generateAndValidateJosm", "copyTranslations", "generateLang"], type: Zip) {
-    baseName 'military-josm'
+    archiveBaseName = 'military-josm'
     version ''
-    destinationDir = new File(buildDir, 'gen')
+    destinationDirectory = new File(buildDir, 'gen')
     from ('icons/png')
     from ('build/gen/' + josm_preset_file)
 }
@@ -193,9 +199,9 @@ task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], t
 }
 
 task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"], type: Zip) {
-    baseName 'military'
+    archiveBaseName = 'military'
     version ''
-    destinationDir = new File(buildDir, 'gen')
+    destinationDirectory = new File(buildDir, 'gen')
     from ('icons/png')
     from ('build/gen/' + vespucci_preset_file)
     from ('i18n')
