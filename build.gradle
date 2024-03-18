@@ -8,7 +8,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.breadmoirai:github-release:2.2.12"
+        classpath "com.github.breadmoirai:github-release:2.5.2"
     }
 }
 
@@ -24,11 +24,10 @@ repositories {
 	mavenLocal()
 }
 
-version = '1.2.0'
-
 import de.undercouch.gradle.tasks.download.Download
 
 ext {
+    version = '1.2.0'
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
@@ -270,12 +269,15 @@ task generatePngs (dependsOn: ["recolour"]) {
 }
 
 githubRelease {
-    targetCommitish "gh-pages"
-    token "${github_token}"
-    owner "simonpoole"
-    tagName "${version}"
-    releaseName "${version}"
-    body '''\
+    token project.ext.github_token == null ? "" : project.ext.github_token    
+    owner = "simonpoole"
+    tagName = project.ext.version
+    releaseName = project.ext.version
+    targetCommitish = "gh-pages"
+    owner = "simonpoole"
+    generateReleaseNotes = true
+    dryRun = false
+    body = '''\
 ## Files
     
 ### Vespucci
@@ -285,8 +287,8 @@ _military.zip_ - preset for Vespucci with icons
 _military_josm.zip_ - preset for JOSM using icons from this project and translations
 
 '''
-    releaseAssets new File(buildDir, 'gen').listFiles()
-    overwrite true
+    releaseAssets = new File(buildDir, 'gen').listFiles()
+    overwrite = true
 }
 
 // generate everything
