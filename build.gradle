@@ -27,7 +27,7 @@ repositories {
 import de.undercouch.gradle.tasks.download.Download
 
 ext {
-    version = '1.2.0'
+    version = '1.3.0'
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
@@ -188,7 +188,7 @@ task vespucciIcons(type: Copy) {
   ])
 }
 
-task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], type: Exec) {
+task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources","replaceVersion"], type: Exec) {
 	def input = 'build/gen/' + vespucci_preset_file
 	mkdir('build/gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
@@ -211,6 +211,14 @@ task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"
 }
 vespucciZip.group = 'preset'
 vespucciZip.description = 'Generate zipped preset file for vespucci'
+
+task replaceVersion {
+    inputs.file('build.gradle')
+    // note that this will only replace the version if it is already a valid version string
+    ant.replaceregexp(match:'presets version="([0-9\\.]+)"', replace:"presets version=\"${project.ext.version}\"", flags:'g', byline:true) {
+        fileset(dir: '.', includes: 'master_preset.xml')
+    }
+}
 
 task recolour {
     group "Icons"
