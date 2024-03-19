@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-18 20:37+0100\n"
+"POT-Creation-Date: 2024-03-19 09:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,9 +189,14 @@ msgctxt "bunker"
 msgid "Underground"
 msgstr ""
 
-#: master_preset.xml:123(item:name|group:Military|preset:Military_landuse)
+#: master_preset.xml:130(item:name|group:Military|preset:Military_landuse)
 msgctxt "Landuse"
 msgid "Military landuse"
+msgstr ""
+
+#: master_preset.xml:123(item:name|group:Military|preset:Military_training_area)
+msgctxt "Landuse"
+msgid "Military training area"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2

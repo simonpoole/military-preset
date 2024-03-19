@@ -69,7 +69,7 @@
             <check key="ruins" text="Ruins" />
         </item>
         <item name="Checkpoint" icon="${ICONPATH}military_checkpoint_23004.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:military=bunker" />
+            <link wiki="Tag:military=checkpoint" />
             <space />
             <key key="military" value="checkpoint" />
             <reference ref="optional_name_operator_service" />
@@ -120,11 +120,18 @@
     			<text key="name" text="Name" />
     		</optional>
         </item>
+        <item name="Military training area" icon="${ICONPATH}military_training_area.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+            <link wiki="Tag:landuse=military"/>
+            <space/>
+            <key key="landuse" value="military"/>
+            <key key="military" value="training_area"/>
+            <reference ref="optional_name_operator_service"/>
+        </item> <!-- Military training area -->
         <item name="Military landuse" icon="${ICONPATH}military_military.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link wiki="Tag:landuse=military"/>
             <space/>
             <key key="landuse" value="military"/>
             <reference ref="optional_name_operator_service"/>
-        </item> <!-- Military -->
+        </item> <!-- Military landuse -->
     </group> <!-- Military -->
 </presets>
