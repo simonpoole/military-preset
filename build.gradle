@@ -27,7 +27,7 @@ repositories {
 import de.undercouch.gradle.tasks.download.Download
 
 ext {
-    version = '1.3.0'
+    version = '1.4.0'
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
@@ -44,7 +44,7 @@ configurations {
 }
 
 dependencies {
-    resoveableRuntimeOnly 'ch.poole:preset-utils:0.40.0'
+    resoveableRuntimeOnly 'ch.poole:preset-utils:0.40.1'
 }
 
 defaultTasks 'generateAllPresetTypes'
