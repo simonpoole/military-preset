@@ -1,122 +1,229 @@
 # 
 # Translators:
-# trendspotter <j.podhorecky@volny.cz>, 2020
+# Aleš Fiala <f.ales1@seznam.cz>, 2022
+# Jiří Podhorecký, 2020
 # Roman Horník <roman.hornik@debian-linux.cz>, 2018
 # Vladan Kudláč <vladankudlac@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2017-11-20 01:17+0100\n"
-"PO-Revision-Date: 2020-01-03 23:15+0000\n"
-"Last-Translator: trendspotter <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech (http://www.transifex.com/openstreetmap/presets/language/cs/)\n"
+"POT-Creation-Date: 2024-04-22 15:17+0200\n"
+"PO-Revision-Date: 2016-01-24 08:53+0000\n"
+"Last-Translator: Aleš Fiala <f.ales1@seznam.cz>, 2022\n"
+"Language-Team: Czech (http://app.transifex.com/openstreetmap/presets/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: master_preset.xml:24(item:name|group:Military|preset:Airfield)
+#: master_preset.xml:23(list_entry:display_value|value:air_force)
+msgid "Air force"
+msgstr ""
+
+#: master_preset.xml:44(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
 msgstr "Letiště"
 
-#: master_preset.xml:33(item:name|group:Military|preset:Barracks)
+#: master_preset.xml:37(list_entry:display_value|value:armour)
+msgid "Armour"
+msgstr ""
+
+#: master_preset.xml:24(list_entry:display_value|value:army)
+msgid "Army"
+msgstr "Armáda"
+
+#: master_preset.xml:35(list_entry:display_value|value:artillery)
+msgid "Artillery"
+msgstr ""
+
+#: master_preset.xml:50(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
 msgstr "Kasárna"
 
-#: master_preset.xml:41(item:name|group:Military|preset:Bunker)
+#: master_preset.xml:56(item:name|group:Military|preset:Base)
+msgid "Base"
+msgstr "Základna"
+
+#: master_preset.xml:25(list_entry:display_value|value:border_guard)
+msgid "Boarder guard"
+msgstr ""
+
+#: master_preset.xml:33(combo:text|key:service_branch)
+msgid "Branch"
+msgstr "Pobočka"
+
+#: master_preset.xml:62(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
 msgstr "Bunkr"
 
-#: master_preset.xml:56(item:name|group:Military|preset:Checkpoint)
+#: master_preset.xml:36(list_entry:display_value|value:cavalry)
+msgid "Cavalry"
+msgstr ""
+
+#: master_preset.xml:72(item:name|group:Military|preset:Checkpoint)
 msgid "Checkpoint"
 msgstr "Kontrolní stanoviště"
 
-#: master_preset.xml:65(item:name|group:Military|preset:Danger_area)
+#: master_preset.xml:26(list_entry:display_value|value:coast_guard)
+msgid "Coast guard"
+msgstr ""
+
+#: master_preset.xml:27(list_entry:display_value|value:cyber)
+msgid "Cyber"
+msgstr ""
+
+#: master_preset.xml:78(item:name|group:Military|preset:Danger_area)
 msgid "Danger area"
 msgstr "Nebezpečná oblast"
 
-#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+#: master_preset.xml:38(list_entry:display_value|value:fighter)
+msgid "Fighter"
+msgstr ""
+
+#: master_preset.xml:28(list_entry:display_value|value:gendarmerie)
+msgid "Gendarmerie"
+msgstr ""
+
+#: master_preset.xml:66(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Hardened aircraft shelter"
 msgstr "Obrněný protiletadlový kryt"
 
-#: master_preset.xml:110(check:text|group:Military|preset:Trench|key:historic)
-#: master_preset.xml:53(check:text|group:Military|preset:Bunker|key:historic)
+#: master_preset.xml:112(check:text|group:Military|preset:Trench|key:historic)
+#: master_preset.xml:69(check:text|group:Military|preset:Bunker|key:historic)
 msgid "Historic"
 msgstr "Historické"
 
-#: master_preset.xml:12(text:text|key:iata)
+#: master_preset.xml:13(text:text|key:iata)
 msgid "IATA"
 msgstr "IATA"
 
-#: master_preset.xml:13(text:text|key:icao)
+#: master_preset.xml:14(text:text|key:icao)
 msgid "ICAO"
 msgstr "ICAO"
 
-#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+#: master_preset.xml:34(list_entry:display_value|value:infantry)
+msgid "Infantry"
+msgstr ""
+
+#: master_preset.xml:29(list_entry:display_value|value:marines)
+msgid "Marines"
+msgstr "Námořní pěchota"
+
+#: master_preset.xml:66(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Munitions"
 msgstr "Munice"
 
-#: master_preset.xml:10(text:text|key:name)
-#: master_preset.xml:19(text:text|key:name)
+#: master_preset.xml:11(text:text|key:name)
+#: master_preset.xml:125(text:text|group:Military|preset:Nuclear_explosion_site|key:name)
+#: master_preset.xml:20(text:text|key:name)
 msgid "Name"
 msgstr "Název"
 
-#: master_preset.xml:76(item:name|group:Military|preset:Naval_base)
+#: master_preset.xml:84(item:name|group:Military|preset:Naval_base)
 msgid "Naval base"
 msgstr "Námořní základna"
 
-#: master_preset.xml:87(item:name|group:Military|preset:Office)
+#: master_preset.xml:30(list_entry:display_value|value:navy)
+msgid "Navy"
+msgstr "Válečné loďstvo"
+
+#: master_preset.xml:120(item:name|group:Military|preset:Nuclear_explosion_site)
+msgid "Nuclear explosion site"
+msgstr ""
+
+#: master_preset.xml:90(item:name|group:Military|preset:Obstacle_course)
+msgid "Obstacle course"
+msgstr ""
+
+#: master_preset.xml:96(item:name|group:Military|preset:Office)
 msgid "Office"
 msgstr "Kanceláře"
 
-#: master_preset.xml:20(text:text|key:operator)
+#: master_preset.xml:21(text:text|key:operator)
 msgid "Operator"
 msgstr "Provozovatel"
 
-#: master_preset.xml:50(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
+#: master_preset.xml:66(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Pillbox"
-msgstr ""
+msgstr "Řopík"
 
-#: master_preset.xml:95(item:name|group:Military|preset:Range)
+#: master_preset.xml:102(item:name|group:Military|preset:Range)
 msgid "Range"
 msgstr "Rozsah"
 
-#: master_preset.xml:54(check:text|group:Military|preset:Bunker|key:ruins)
+#: master_preset.xml:70(check:text|group:Military|preset:Bunker|key:ruins)
 msgid "Ruins"
 msgstr "Trosky"
 
-#: master_preset.xml:103(item:name|group:Military|preset:Trench)
+#: master_preset.xml:22(multiselect:text|key:military_service)
+msgid "Service"
+msgstr "Účelový"
+
+#: master_preset.xml:31(list_entry:display_value|value:space_force)
+msgid "Space force"
+msgstr ""
+
+#: master_preset.xml:39(list_entry:display_value|value:submarines)
+msgid "Submarines"
+msgstr ""
+
+#: master_preset.xml:108(item:name|group:Military|preset:Trench)
 msgid "Trench"
 msgstr "Příkop"
 
-#: master_preset.xml:50(combo:text|group:Military|preset:Bunker|key:bunker_type)
+#: master_preset.xml:66(combo:text|group:Military|preset:Bunker|key:bunker_type)
 msgid "Type"
 msgstr "Typ"
 
-#: master_preset.xml:14(text:text|key:wikipedia)
+#: master_preset.xml:15(text:text|key:wikipedia)
 msgid "Wikipedia"
 msgstr "Wikipedia"
 
-#: master_preset.xml:23(group:name|group:Military)
+#: master_preset.xml:43(group:name|group:Military)
 msgctxt "preset group"
 msgid "Military"
 msgstr "Vojenské"
 
-#: master_preset.xml:51(combo:text|group:Military|preset:Bunker|key:location)
+#: master_preset.xml:67(combo:text|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Location"
 msgstr "Umístění"
 
-#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+#: master_preset.xml:67(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Overground"
-msgstr ""
+msgstr "Pozemní"
 
-#: master_preset.xml:51(combo:display_values|group:Military|preset:Bunker|key:location)
+#: master_preset.xml:67(combo:display_values|group:Military|preset:Bunker|key:location)
 msgctxt "bunker"
 msgid "Underground"
 msgstr "Podzemní"
+
+#: master_preset.xml:114(list_entry:display_value|group:Military|preset:Trench|value:dugout)
+msgctxt "trench"
+msgid "Dugout"
+msgstr ""
+
+#: master_preset.xml:115(list_entry:display_value|group:Military|preset:Trench|value:firestep)
+msgctxt "trench"
+msgid "Firestep"
+msgstr ""
+
+#: master_preset.xml:113(combo:text|group:Military|preset:Trench|key:trench)
+msgctxt "trench"
+msgid "Trench type"
+msgstr ""
+
+#: master_preset.xml:135(item:name|group:Military|preset:Military_landuse)
+msgctxt "Landuse"
+msgid "Military landuse"
+msgstr ""
+
+#: master_preset.xml:128(item:name|group:Military|preset:Military_training_area)
+msgctxt "Landuse"
+msgid "Military training area"
+msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: master_preset.xml0(None)
