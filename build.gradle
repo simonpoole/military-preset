@@ -31,7 +31,7 @@ ext {
 	preset_file = 'master_preset.xml'
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
-	vespucci_preset_version = '1.17'
+	vespucci_preset_version = '1.18'
 	temp = 'build/temp/'
 	tempDir = file(temp)
 	github_token = System.getenv('GITHUB_TOKEN')
@@ -44,7 +44,7 @@ configurations {
 }
 
 dependencies {
-    resoveableRuntimeOnly 'ch.poole:preset-utils:0.40.1'
+    resoveableRuntimeOnly 'ch.poole:preset-utils:0.41.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
