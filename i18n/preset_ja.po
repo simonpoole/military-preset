@@ -1,12 +1,12 @@
 # 
 # Translators:
-# Nozomu KURASAWA <nabetaro@caldron.jp>, 2018
+# Nozomu KURASAWA <nabetaro@caldron.jp>, 2018,2024
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2024-04-22 15:17+0200\n"
 "PO-Revision-Date: 2016-01-24 08:53+0000\n"
-"Last-Translator: Nozomu KURASAWA <nabetaro@caldron.jp>, 2018\n"
+"Last-Translator: Nozomu KURASAWA <nabetaro@caldron.jp>, 2018,2024\n"
 "Language-Team: Japanese (http://app.transifex.com/openstreetmap/presets/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr "飛行場"
 
 #: master_preset.xml:37(list_entry:display_value|value:armour)
 msgid "Armour"
-msgstr ""
+msgstr "装甲"
 
 #: master_preset.xml:24(list_entry:display_value|value:army)
 msgid "Army"
@@ -32,7 +32,7 @@ msgstr "陸軍"
 
 #: master_preset.xml:35(list_entry:display_value|value:artillery)
 msgid "Artillery"
-msgstr ""
+msgstr "砲"
 
 #: master_preset.xml:50(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
@@ -40,23 +40,23 @@ msgstr "兵舎"
 
 #: master_preset.xml:56(item:name|group:Military|preset:Base)
 msgid "Base"
-msgstr ""
+msgstr "基地"
 
 #: master_preset.xml:25(list_entry:display_value|value:border_guard)
 msgid "Boarder guard"
-msgstr ""
+msgstr "国境警備隊"
 
 #: master_preset.xml:33(combo:text|key:service_branch)
 msgid "Branch"
-msgstr "支店名"
+msgstr "軍種"
 
 #: master_preset.xml:62(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
-msgstr "バンカー"
+msgstr "掩体壕"
 
 #: master_preset.xml:36(list_entry:display_value|value:cavalry)
 msgid "Cavalry"
-msgstr ""
+msgstr "騎兵隊"
 
 #: master_preset.xml:72(item:name|group:Military|preset:Checkpoint)
 msgid "Checkpoint"
@@ -64,7 +64,7 @@ msgstr "検問所"
 
 #: master_preset.xml:26(list_entry:display_value|value:coast_guard)
 msgid "Coast guard"
-msgstr ""
+msgstr "沿岸警備隊"
 
 #: master_preset.xml:27(list_entry:display_value|value:cyber)
 msgid "Cyber"

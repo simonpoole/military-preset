@@ -17,7 +17,7 @@ msgstr ""
 
 #: master_preset.xml:23(list_entry:display_value|value:air_force)
 msgid "Air force"
-msgstr ""
+msgstr "Fuerza aérea"
 
 #: master_preset.xml:44(item:name|group:Military|preset:Airfield)
 msgid "Airfield"
@@ -25,7 +25,7 @@ msgstr "Aeródromo"
 
 #: master_preset.xml:37(list_entry:display_value|value:armour)
 msgid "Armour"
-msgstr ""
+msgstr "Blindados"
 
 #: master_preset.xml:24(list_entry:display_value|value:army)
 msgid "Army"
@@ -33,7 +33,7 @@ msgstr "Ejército"
 
 #: master_preset.xml:35(list_entry:display_value|value:artillery)
 msgid "Artillery"
-msgstr ""
+msgstr "Artillería"
 
 #: master_preset.xml:50(item:name|group:Military|preset:Barracks)
 msgid "Barracks"
@@ -41,15 +41,15 @@ msgstr "Barracones"
 
 #: master_preset.xml:56(item:name|group:Military|preset:Base)
 msgid "Base"
-msgstr ""
+msgstr "Base militar"
 
 #: master_preset.xml:25(list_entry:display_value|value:border_guard)
 msgid "Boarder guard"
-msgstr ""
+msgstr "Guardia fronteriza"
 
 #: master_preset.xml:33(combo:text|key:service_branch)
 msgid "Branch"
-msgstr "Sucursal"
+msgstr "Rama"
 
 #: master_preset.xml:62(item:name|group:Military|preset:Bunker)
 msgid "Bunker"
@@ -57,7 +57,7 @@ msgstr "Búnker"
 
 #: master_preset.xml:36(list_entry:display_value|value:cavalry)
 msgid "Cavalry"
-msgstr ""
+msgstr "Caballería"
 
 #: master_preset.xml:72(item:name|group:Military|preset:Checkpoint)
 msgid "Checkpoint"
@@ -65,11 +65,11 @@ msgstr "Punto de control"
 
 #: master_preset.xml:26(list_entry:display_value|value:coast_guard)
 msgid "Coast guard"
-msgstr ""
+msgstr "Guardia costera"
 
 #: master_preset.xml:27(list_entry:display_value|value:cyber)
 msgid "Cyber"
-msgstr ""
+msgstr "Cibernética"
 
 #: master_preset.xml:78(item:name|group:Military|preset:Danger_area)
 msgid "Danger area"
@@ -77,11 +77,11 @@ msgstr "Zona peligrosa"
 
 #: master_preset.xml:38(list_entry:display_value|value:fighter)
 msgid "Fighter"
-msgstr ""
+msgstr "Cazas"
 
 #: master_preset.xml:28(list_entry:display_value|value:gendarmerie)
 msgid "Gendarmerie"
-msgstr ""
+msgstr "Gendarmería"
 
 #: master_preset.xml:66(combo:display_values|group:Military|preset:Bunker|key:bunker_type)
 msgid "Hardened aircraft shelter"
@@ -102,7 +102,7 @@ msgstr "ICAO"
 
 #: master_preset.xml:34(list_entry:display_value|value:infantry)
 msgid "Infantry"
-msgstr ""
+msgstr "Infantería"
 
 #: master_preset.xml:29(list_entry:display_value|value:marines)
 msgid "Marines"
@@ -128,11 +128,11 @@ msgstr "Marina"
 
 #: master_preset.xml:120(item:name|group:Military|preset:Nuclear_explosion_site)
 msgid "Nuclear explosion site"
-msgstr ""
+msgstr "Lugar de explosión nuclear"
 
 #: master_preset.xml:90(item:name|group:Military|preset:Obstacle_course)
 msgid "Obstacle course"
-msgstr ""
+msgstr "Pista de obstáculos"
 
 #: master_preset.xml:96(item:name|group:Military|preset:Office)
 msgid "Office"
@@ -160,11 +160,11 @@ msgstr "Servicio"
 
 #: master_preset.xml:31(list_entry:display_value|value:space_force)
 msgid "Space force"
-msgstr ""
+msgstr "Fuerza espacial"
 
 #: master_preset.xml:39(list_entry:display_value|value:submarines)
 msgid "Submarines"
-msgstr ""
+msgstr "Submarinos"
 
 #: master_preset.xml:108(item:name|group:Military|preset:Trench)
 msgid "Trench"
@@ -201,27 +201,27 @@ msgstr "Subterráneo"
 #: master_preset.xml:114(list_entry:display_value|group:Military|preset:Trench|value:dugout)
 msgctxt "trench"
 msgid "Dugout"
-msgstr ""
+msgstr "Refugio"
 
 #: master_preset.xml:115(list_entry:display_value|group:Military|preset:Trench|value:firestep)
 msgctxt "trench"
 msgid "Firestep"
-msgstr ""
+msgstr "Escalón de fuego"
 
 #: master_preset.xml:113(combo:text|group:Military|preset:Trench|key:trench)
 msgctxt "trench"
 msgid "Trench type"
-msgstr ""
+msgstr "Tipo de trinchera"
 
 #: master_preset.xml:135(item:name|group:Military|preset:Military_landuse)
 msgctxt "Landuse"
 msgid "Military landuse"
-msgstr ""
+msgstr "Uso del suelo militar"
 
 #: master_preset.xml:128(item:name|group:Military|preset:Military_training_area)
 msgctxt "Landuse"
 msgid "Military training area"
-msgstr ""
+msgstr "Área de entrenamiento militar"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: master_preset.xml0(None)

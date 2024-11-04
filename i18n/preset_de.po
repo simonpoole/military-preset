@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2024-04-22 15:17+0200\n"
 "PO-Revision-Date: 2016-01-24 08:53+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>, 2016-2017,2024\n"
+"Last-Translator: mcliquid <info@mcliquid.de>, 2024\n"
 "Language-Team: German (http://app.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -203,12 +203,12 @@ msgstr "Unterirdisch"
 #: master_preset.xml:114(list_entry:display_value|group:Military|preset:Trench|value:dugout)
 msgctxt "trench"
 msgid "Dugout"
-msgstr ""
+msgstr "Unterstand"
 
 #: master_preset.xml:115(list_entry:display_value|group:Military|preset:Trench|value:firestep)
 msgctxt "trench"
 msgid "Firestep"
-msgstr ""
+msgstr "Feuerstufe"
 
 #: master_preset.xml:113(combo:text|group:Military|preset:Trench|key:trench)
 msgctxt "trench"

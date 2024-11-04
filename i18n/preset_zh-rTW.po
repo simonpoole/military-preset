@@ -200,17 +200,17 @@ msgstr "地下"
 #: master_preset.xml:114(list_entry:display_value|group:Military|preset:Trench|value:dugout)
 msgctxt "trench"
 msgid "Dugout"
-msgstr ""
+msgstr "獨木舟"
 
 #: master_preset.xml:115(list_entry:display_value|group:Military|preset:Trench|value:firestep)
 msgctxt "trench"
 msgid "Firestep"
-msgstr ""
+msgstr "火步"
 
 #: master_preset.xml:113(combo:text|group:Military|preset:Trench|key:trench)
 msgctxt "trench"
 msgid "Trench type"
-msgstr ""
+msgstr "散兵坑類型"
 
 #: master_preset.xml:135(item:name|group:Military|preset:Military_landuse)
 msgctxt "Landuse"

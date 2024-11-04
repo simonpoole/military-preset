@@ -211,7 +211,7 @@ msgstr ""
 #: master_preset.xml:113(combo:text|group:Military|preset:Trench|key:trench)
 msgctxt "trench"
 msgid "Trench type"
-msgstr ""
+msgstr "Lövészárok fajtája"
 
 #: master_preset.xml:135(item:name|group:Military|preset:Military_landuse)
 msgctxt "Landuse"
