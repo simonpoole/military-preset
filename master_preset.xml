@@ -41,19 +41,19 @@
     	</optional>
     </chunk>
     <group name="Military" name_context="preset group" icon="${ICONPATH}military_military.${ICONTYPE}">
-        <item name="Airfield" icon="${ICONPATH}military_airport.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Airfield" icon="${ICONPATH}military_airport.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:military=airfield" />
             <space />
             <key key="military" value="airfield" match="keyvalue!" />
             <reference ref="mil_aerodrome" />
         </item>
-        <item name="Barracks" icon="${ICONPATH}military_barracks_23002.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Barracks" icon="${ICONPATH}military_barracks_23002.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:military=barracks" />
             <space />
             <key key="military" value="barracks" />
             <reference ref="optional_name_operator_service" />
         </item>
-        <item name="Base" icon="${ICONPATH}military_base.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Base" icon="${ICONPATH}military_base.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:military=base" />
             <space />
             <key key="military" value="base" />
@@ -75,13 +75,13 @@
             <key key="military" value="checkpoint" />
             <reference ref="optional_name_operator_service" />
         </item>
-        <item name="Danger area" icon="${ICONPATH}military_danger_area_23005.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Danger area" icon="${ICONPATH}military_danger_area_23005.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:military=danger_area" />
             <space />
             <key key="military" value="danger_area" />
             <reference ref="optional_name_operator_service" />
         </item>
-        <item name="Naval base" icon="${ICONPATH}military_naval_base_23006.${ICONTYPE}" type="node,closedway,,multipolygon" preset_name_label="true">
+        <item name="Naval base" icon="${ICONPATH}military_naval_base_23006.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:military=naval_base" />
             <space />
             <key key="military" value="naval_base" />
