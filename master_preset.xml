@@ -126,7 +126,7 @@
     		</optional>
         </item>
         <item name="Military training area" icon="${ICONPATH}military_training_area.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
-            <link wiki="Tag:landuse=military"/>
+            <link wiki="Tag:military=training_area"/>
             <space/>
             <key key="landuse" value="military"/>
             <key key="military" value="training_area"/>
